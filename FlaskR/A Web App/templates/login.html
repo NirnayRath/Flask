@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<title>My Link Downloader-login</title>
+
+	</head>
+	<body>
+	<div class="container">
+		<h1>Please Login</h1>
+		<br>
+		<form action="" method="post">
+			<input type="text" placeholder="Username" name="username" value="{{ request.form.username }}">
+			<input type="password" placeholder="Press Check-in" name="password" value="{{ request.form.password }}">
+			<input class="btn btn-default" type="submit" value="Check-in">
+		</form>
+		{% if error %}
+			<p class="error><strong>Error:</strong> {{ error }}</p>
+		{% endif %}
+	</div>
+	</body>
+</html>

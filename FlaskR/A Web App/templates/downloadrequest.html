@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<title>My Link Downloader-Link page</title>
+
+	</head>
+	<body>
+	<div class="container">
+		<h1>Enter the link and file path below:</h1>
+		<br>
+		<form action="" method="post">
+			<input type="text" placeholder="Filename." name="filename" value="{{ request.form.filename }}">
+			<input type="text" placeholder="Slap that link here" name="linkname" value="{{ request.form.linkname }}">
+		<br>
+			<input class="button" type="submit" value="Down-Load">
+		
+		</form>
+	</div>
+	</body>
+</html>
